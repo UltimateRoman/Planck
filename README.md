@@ -1,6 +1,18 @@
 # Planck
 
-Pre-market trading enabled by ERC-404 tokens
+A pre-market trading platform that lets you trade points and airdrop allocations as ERC-404 tokens
+
+<br/>
+
+<p align="center">
+ <img src="diagram1.png" />
+</p>
+
+<p align="center">
+ <img src="diagram2.png" />
+</p>
+
+<br/>
 
 
 ### Contract deployments
