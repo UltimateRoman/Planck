@@ -39,7 +39,7 @@ export const NETWORKS_EXTRA_DATA: Record<string, TChainAttributes> = {
   [chains.optimism.id]: {
     color: "#f01a37",
   },
-  [chains.arbitrumGoerli.id]: {
+  [chains.gnosisChiado.id]: {
     color: "#28a0f0",
   },
   [chains.arbitrum.id]: {

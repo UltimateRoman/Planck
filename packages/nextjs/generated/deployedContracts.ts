@@ -1,8 +1,8 @@
 const contracts = {
-  100: [
+  10200: [
     {
-      name: "Gnosis Chain",
-      chainId: "100",
+      name: "Gnosis Chiado",
+      chainId: "10200",
       contracts: {
         OrderToken: {
           address: "0x53fb47c8A5c09395B4804F30CF20C8a30db1C4e8",

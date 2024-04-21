@@ -46,7 +46,7 @@ export const Header = () => {
       <li>
         <NavLink href="/marketplace">
           <SparklesIcon className="h-4 w-4" />
-          Marketplace
+          Pre-Market
         </NavLink>
       </li>
       <li>
