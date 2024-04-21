@@ -81,7 +81,7 @@ const ExampleUI: NextPage = () => {
         </aside>
     <div className=" container mx-auto mt-8 ml-64">
       <h1 className="text-3xl font-semibold mb-4 ml-2">Welcome to the Marketplace</h1>
-      <div className="grid lg:grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 gap-4 pl-2 pr-4">
         {cardsData.map(card => (
           <div key={card.id} className="card w-96 glass relative">
             <div className="icon-container absolute flex top-2 right-2">
