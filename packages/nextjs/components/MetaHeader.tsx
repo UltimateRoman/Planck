@@ -5,7 +5,6 @@ type MetaHeaderProps = {
   title?: string;
   description?: string;
   image?: string;
-  twitterCard?: string;
   children?: React.ReactNode;
 };
 
@@ -14,10 +13,9 @@ type MetaHeaderProps = {
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/` : "/";
 
 export const MetaHeader = ({
-  title = "Scaffold-ETH 2 App",
-  description = "Built with 🏗 Scaffold-ETH 2",
+  title = "Planck",
+  description = "Built at Scaling Ethereum",
   image = "thumbnail.jpg",
-  twitterCard = "summary_large_image",
   children,
 }: MetaHeaderProps) => {
   const imageUrl = baseUrl + image;
@@ -44,7 +42,6 @@ export const MetaHeader = ({
           <meta name="twitter:image" content={imageUrl} />
         </>
       )}
-      {twitterCard && <meta name="twitter:card" content={twitterCard} />}
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
       {children}
     </Head>

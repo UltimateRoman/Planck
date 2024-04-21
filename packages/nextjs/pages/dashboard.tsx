@@ -36,7 +36,7 @@ const ExampleUI: NextPage = () => {
 
   return (
     <>
-       <MetaHeader
+      <MetaHeader
         title="Planck"
       >
       </MetaHeader>
@@ -80,7 +80,7 @@ const ExampleUI: NextPage = () => {
         </div>
         </aside>
     <div className=" container mx-auto mt-8 ml-64">
-      <h1 className="text-3xl font-semibold mb-4 ml-2">Welcome to the Marketplace</h1>
+      <h1 className="text-3xl font-semibold mb-4 ml-2">Dashboard</h1>
       <div className="grid lg:grid-cols-3 gap-4">
         {cardsData.map(card => (
           <div key={card.id} className="card w-96 glass relative">

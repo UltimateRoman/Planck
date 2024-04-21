@@ -36,10 +36,8 @@ export const Header = () => {
 
   const navLinks = (
     <>
-      <li>
-        <NavLink href="/">Home</NavLink>
-      </li>
-      <li>
+ 
+      <li className="ml-10">
         <NavLink href="/debug">
           <BugAntIcon className="h-4 w-4" />
           Debug Contracts
