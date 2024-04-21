@@ -1,7 +1,8 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-import "../contracts/YourContract.sol";
+import "../contracts/PreMarket.sol";
+import "../contracts/OrderToken.sol";
 import "./DeployHelpers.s.sol";
 
 contract DeployScript is ScaffoldETHDeploy {
@@ -15,13 +16,23 @@ contract DeployScript is ScaffoldETHDeploy {
             );
         }
         vm.startBroadcast(deployerPrivateKey);
-        YourContract yourContract = new YourContract(
+        OrderToken orderToken = new OrderToken(
+            "Planck Order Token",
+            "POT",
+            18,
             vm.addr(deployerPrivateKey)
         );
         console.logString(
             string.concat(
-                "YourContract deployed at: ",
-                vm.toString(address(yourContract))
+                "OrderToken deployed at: ",
+                vm.toString(address(orderToken))
+            )
+        );
+        PreMarket preMarket = new PreMarket(IOrderToken(address(orderToken)));
+        console.logString(
+            string.concat(
+                "PreMarket deployed at: ",
+                vm.toString(address(preMarket))
             )
         );
         vm.stopBroadcast();
